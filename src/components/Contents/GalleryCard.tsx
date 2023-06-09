@@ -19,7 +19,7 @@ export const GalleryCard = (props: GalleryCardProps) => {
         </button>
       )}
       <img className="h-[270px] w-[200px] rounded-lg" src={props.imageUrl} />
-      <h3 className="text-white text-xl w-[200px] text-center font-bold">{props.name}</h3>
+      <h3 className="text-black text-xl w-[200px] text-center font-bold">{props.name}</h3>
     </div>
   );
 };
