@@ -1,12 +1,18 @@
-export const SearchBar = () => {
-  return (
-    <div>
-      <input
-        type="text"
-        name="search"
-        placeholder="Search for Gallery..."
-        className="my-4 w-[300px] px-2 py-2 font-semibold text-lg bg-white text-slate-700 rounded-xl"
-      />
-    </div>
-  );
-};
+// import { useState } from "react"
+
+interface SearchBarProps{
+    setQueryString: React.Dispatch<React.SetStateAction<string>>
+    queryString: string
+}
+export function SearchBar(props: SearchBarProps){
+
+    const handleFormEvent = (e: React.ChangeEvent<HTMLInputElement>) => {
+        props.setQueryString(e.target.value)
+    }
+
+    return(
+        <div className="my-4 mx-auto w-[300px] font-semibold">
+            <input type="text" className="w-full rounded-xl text-lg py-2 px-2" placeholder="Search for Photos..." value={props.queryString} onChange={handleFormEvent}/>
+        </div>
+    )
+}
