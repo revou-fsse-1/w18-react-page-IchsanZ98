@@ -89,8 +89,8 @@ export function MembershipForm(props: MembershipFormProps){
         <div className="bg-opacity-50 bg-black fixed w-full h-full">
             <div className="bg-white max-w-[600px] min-h-[300px] opacity-100 mx-auto top-[25vh] relative px-12 py-6 rounded-lg w-max">
                 <p className="text-end cursor-pointer" onClick={handleCloseButton}>&#10006;</p>
-                <h1 className="font-bold text-2xl">Register to Photo Club Member</h1>
-                <p>Get countless benefit by joining as a member of Photo Club!</p>
+                <h1 className="font-bold text-2xl">Register to Unique Gallery</h1>
+                <p>Get countless benefit by joining as a member of Unique Gallery!</p>
                 <div>
                     <form className="flex flex-col gap-2 mt-4 text-sm" onSubmit={handleSubmit}>
                         <label htmlFor="email-input" className="font-semibold">User Email</label>

@@ -29,7 +29,7 @@ const [formErrors, setFormErrors] = useState({
           className="text-black w-max bg-white px-6 py-3 text-md rounded-xl hover:scale-110 duration-200"
           onClick={handleButtonClick}
         >
-          Join Photo Club Membership
+          Join Unique Gallery Membership
         </button>
       </div>
       {isElementVisible && <MembershipForm isElementVisible={isElementVisible} setElementVisible={setElementVisible} formFields={formFields} setFormFields={setFormFields} formErrors={formErrors} setFormErrors={setFormErrors}/>}
