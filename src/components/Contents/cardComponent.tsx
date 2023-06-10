@@ -19,7 +19,7 @@ export function CardComponent(props: CardComponentProps) {
       {filteredData.map((item) => {
         return (
           <div
-            className="w-max relative hover:scale-125 duration-500"
+            className="w-max relative hover:scale-125 duration-500 hover:z-10"
             key={item.id}
           >
             <LikeButton

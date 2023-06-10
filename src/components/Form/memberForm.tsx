@@ -1,4 +1,4 @@
-interface MembershipFormProps {
+interface MemberFormProps {
     isElementVisible: boolean
     setElementVisible: React.Dispatch<React.SetStateAction<boolean>>
     formFields:{
@@ -24,7 +24,7 @@ interface MembershipFormProps {
         status: string;
     }>>
 }
-export function MembershipForm(props: MembershipFormProps){
+export function MemberForm(props: MemberFormProps){
 
 
     const validateForm = () => {

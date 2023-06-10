@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { CardContainer } from "./components/Contents/cardContainer"
 import { HeaderContainer } from "./components/Header/headerContainer"
-import { MembershipContainer } from "./components/Form/membershipContainer"
+import { FormContainer } from "./components/Form/formContainer"
 import "./App.css";
 
 function App() {
@@ -11,7 +11,7 @@ return (
     <div className="flex flex-col items-center">
         <HeaderContainer likedCount={likedCount} setQueryString={setQueryString} queryString={queryString}/>
         <CardContainer setLikedCount={setLikedCount} queryString={queryString}/>
-        <MembershipContainer/>
+        <FormContainer/>
     </div>
     
 )

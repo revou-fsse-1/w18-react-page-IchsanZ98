@@ -1,4 +1,4 @@
-interface FormSuccessProps {
+interface FormValidationProps {
     formErrors:{
         email: string;
         firstName: string;
@@ -7,7 +7,7 @@ interface FormSuccessProps {
     }
 }
 
-export function FormSuccess(props: FormSuccessProps){
+export function FormValid(props: FormValidationProps){
     console.log(props.formErrors)
     return (
         <div className="mx-auto fixed bottom-4">
