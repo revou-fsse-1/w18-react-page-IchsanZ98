@@ -102,7 +102,7 @@ export function MembershipForm(props: MembershipFormProps){
                         <label htmlFor="last-name-input" className=" font-semibold">Last Name</label>
                         <input type="text" placeholder="Insert your last name" id ="last-name-input" name="lastName" className="border-[1px] px-2 py-1 rounded-lg" value={props.formFields.lastName} onChange={handleInputChange} />
                         <span className="text-red-500">{props.formErrors.lastName}</span>
-                        <button className="bg-green-600 mt-4 text-white font-semibold text-lg px-6 py-1 rounded-lg" onClick={validateForm}>
+                        <button className="bg-black mt-4 text-white font-semibold text-lg px-6 py-1 rounded-lg" onClick={validateForm}>
                             Register Now
                         </button>            
                     </form>
